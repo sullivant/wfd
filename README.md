@@ -10,10 +10,15 @@ This is a personal project to keep track of some documentation that is already f
 ## Viewing Differences
 When necessary a version on the official website can be compared to the version here by simply doing the normal software development 'thing' and letting git determine if there was a change.
 
+
+### With DOCX (Word Doc)
 When desired changes can be viewed in a diff file format but due to the binary files docx and pdf a third party library is required: `pandoc`.
 
-### Comparing with Pandoc
+#### Comparing with Pandoc
 Details on how to implement this on your local machine can be found here: https://github.com/vigente/gerardus/wiki/Integrate-git-diffs-with-word-docx-files  
+
+### With PDF
+In order to use PDF, the package diff-pdf must be installed (usually view `brew install diff-pdf` and the related gitattributes and gitconfig files need to be changed, or it can be done manually.
 
 This process does a good job at showing the deltas in a reportable and sensible fashion.  The two basic commands, after pandoc is installed and setup, are:
 
